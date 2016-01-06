@@ -10,6 +10,6 @@ Run Directly:
                -p 3483:3483 \
                -v <local-state-dir>:/srv/squeezebox \
                -v <audio-dir>:/srv/music \
-               larsks/logitech/media-server
+               plusminus/logitech-media-server
 
 
