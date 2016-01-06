@@ -10,7 +10,7 @@ ENV LMSDEB /tmp/lms.deb
 RUN \
         apt-get update &&\
         apt-get dist-upgrade -y &&\
-        apt-get install -y wget curl &&\
+        apt-get install -y curl wget faad flac lame sox &&\
         wget -O $LMSDEB --user-agent="https://hub.docker.com/r/plusminus/" --progress=bar:force $(curl "http://www.mysqueezebox.com/update/?version=7.9.0&revision=1&geturl=1&os=deb") &&\
         dpkg -i $LMSDEB &&\
 	rm $LMSDEB &&\
